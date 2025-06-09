@@ -6,3 +6,6 @@
 >
 > 本站地址：[https://mingfancloud.cn](https://mingfancloud.cn)
 
+## 资料
+
+[河南升本英语单词列表word-list](word-list.md)

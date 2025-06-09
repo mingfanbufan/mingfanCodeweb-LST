@@ -26,15 +26,9 @@ OpenStack 是一个 云操作系统，它控制着整个数据中心的大型计
 - [华为云计算-FusionAcces](桌面云技术与部署/华为云计算FusionAcces.md)
 
 
-"[🔥桌面云技术与部署资源-飞书](https://q1h6kdpo24v.feishu.cn/drive/folder/HgZ1fLHzEl3oOgdHgE2cS6TPnPh)"
-
-
 ## [云计算技术基础](云计算技术基础/README.md)
 
 - [云计算eNSP安装步骤](云计算技术基础/eNSP安装步骤.md)
-
-
-[**云计算资料查看下载-飞书**](https://q1h6kdpo24v.feishu.cn/drive/folder/U3hSfhPnDldsEjdgP3qchCkhnnf)   
 
 
 ## 期末测试试题
@@ -53,9 +47,5 @@ OpenStack 是一个 云操作系统，它控制着整个数据中心的大型计
 ## 资料
 
 
-
-[**云计算资料查看下载-飞书**](https://q1h6kdpo24v.feishu.cn/drive/folder/U3hSfhPnDldsEjdgP3qchCkhnnf)   
-[**桌面云技术于部署资源查看下载-飞书**](https://q1h6kdpo24v.feishu.cn/drive/folder/HgZ1fLHzEl3oOgdHgE2cS6TPnPh)  
 🔥[**Docker容器技术资源-飞书**](https://q1h6kdpo24v.feishu.cn/drive/folder/M8ZkfNLXOlMequdTdQeclnnCn9g)
-
 
