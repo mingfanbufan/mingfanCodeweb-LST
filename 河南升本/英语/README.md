@@ -9,3 +9,5 @@
 ## 资料
 
 [河南升本英语单词列表word-list](word-list.md)
+
+[河南升本英语单词列表单词版](word-list-word.md)
