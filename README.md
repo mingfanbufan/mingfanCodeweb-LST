@@ -58,7 +58,7 @@ permalink: /
 
 - [明凡编程宝典](https://mingfancloud.cn)
 - [明凡Download](https://download.mingfancloud.cn)
-- [MGL站队](https://yuemingfan.cn)
+- [明凡云-开发中](https://yuemingfan.cn)
 
 
 ## [投稿](使用手册/投稿.md)
