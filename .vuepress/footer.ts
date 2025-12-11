@@ -17,8 +17,8 @@ export default {
       href: "https://www.laoyujianli.com/",
     },
     {
-      label: "鱼聪明 AI",
-      href: "https://www.yucongming.com/",
+      label: "鱼AI导航",
+      href: "https://ai.codefather.cn/",
     },
   ],
   copyright: {
