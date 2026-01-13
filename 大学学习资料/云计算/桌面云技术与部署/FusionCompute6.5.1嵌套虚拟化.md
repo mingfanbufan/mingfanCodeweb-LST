@@ -9,27 +9,27 @@
 
 ## 虚拟化嵌套逻辑图
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301609197.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301609197.png)
 
 ## 逻辑拓扑图
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301609673.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301609673.png)
 
 ## 1.openEuler系统安装
 
 ### 1.1 创建虚拟机
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301610460.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301610460.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301611454.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301611454.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301611961.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301611961.png)
 
 ### 1.2 安装openEuler
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301611220.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301611220.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301611350.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301611350.png)
 
 ### 1.3 安装图形化包
 
@@ -43,7 +43,7 @@ reboot                                              # 重启
 
 重启后进入图形化界面
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301613819.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301613819.png)
 
 ## 2.搭建虚拟化嵌套环境
 
@@ -57,7 +57,7 @@ systemctl enable libvirtd --now    # 不配置导致虚拟系统管理启动失�
 systemctl restart libvirtd
 ```
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301614074.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301614074.png)
 
 ### 2.2 X11转发（可选步骤）
 
@@ -70,7 +70,7 @@ vi /etc/ssh/sshd_config
 “esc” 退出编辑模式
 “：wq” 保存并退出
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301616833.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301616833.png)
 
 ```bash
 systemctl restart sshd     #重启sshd服务
@@ -78,7 +78,7 @@ MobaXterm重连openEuler会话
 virt-manager
 ```
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301616207.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301616207.png)
 
 ### 2.3 配置网卡桥接
 
@@ -90,9 +90,9 @@ ifconfig bridge0 192.168.1.100 netmask 255.255.255.0        # 给个IP临时激�
 执行完成第4行代码后，用Xshell之类远程软件无法连接，通过虚拟机执行命令行
 ```
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301620735.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301620735.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301620169.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301620169.png)
 
 ```bash
 nmcli connection modify bridge0 ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.dns 114.114.114.114 connection.autoconnect yes        
@@ -105,15 +105,15 @@ cd /etc/sysconfig/network-scripts/          #切换目录
 ls                                          #查看ifcfg-bridge0网卡文件是否存在
 ```
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301621876.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301621876.png)
 
 ```bash
 vi /etc/sysconfig/network-scripts/ifcfg-ens33
 ```
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301622114.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301622114.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301622919.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301622919.png)
 
 ```bash
 nmcli connection reload
@@ -121,33 +121,33 @@ nmcli connection up ens33
 nmcli connection up bridge0
 ```
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301623042.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301623042.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301623793.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301623793.png)
 
 ## 3.安装CNA和VRM
 
 ### 3.1 上传镜像至openEuler
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301624332.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301624332.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301624212.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301624212.png)
 
 ### 3.2 创建虚拟机（QEMU）
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625012.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625012.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625016.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625016.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625663.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625663.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625207.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625207.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625717.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301625717.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301626380.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301626380.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301626790.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301626790.png)
 
 ### 3.3 创建磁盘文件
 
@@ -157,35 +157,35 @@ cd /home/data
 qemu-img create -f qcow2 CNA01.qcow2 180g -o preallocation=metadata
 ```
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301627478.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301627478.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301627365.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301627365.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301627942.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301627942.png)
 
 ### 3.4 自定义虚拟机
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301628896.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301628896.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301628305.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301628305.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301628501.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301628501.png)
 
 ### 3.5 CNA安装
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301629152.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301629152.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630803.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630803.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630196.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630196.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630352.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630352.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630259.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630259.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630374.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301630374.png)
 
-![img](https://mingfanweb-img.obs.cn-north-4.myhuaweicloud.com/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301631311.png)
+![img](https://pic.mingfancloud.cn/University-studies/cloud-computing/DesktopCloudTechnology/FusionCompute6.5.1NestedVirtualization/202403301631311.png)
 
 ### 3.6 安装VRM（安装步骤参考CNA）
 
